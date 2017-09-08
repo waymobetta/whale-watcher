@@ -17,7 +17,10 @@ except:
 invalid = [
 	'Poloniex Wallet',
 	'liqui.io',
-	'ENS-Registrar'
+	'ENS-Registrar',
+        'Kraken_4',
+        'Bittrex',
+        'Bitfinex_Wallet1'
 ]
 
 def img():
