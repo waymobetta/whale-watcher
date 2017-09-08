@@ -1,7 +1,5 @@
 import os
 import sys
-import getopt
-from docopt import docopt
 from termcolor import cprint
 from bs4 import BeautifulSoup
 from pyfiglet import figlet_format
