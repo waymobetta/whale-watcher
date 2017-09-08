@@ -14,6 +14,8 @@ except:
 	print 'Request library not found, please install before proceeding\n'
 	sys.exit()
 
+
+# todo: add additional non-contract addresses (i.e. exchanges)
 invalid = [
 	'Poloniex Wallet',
 	'liqui.io',
