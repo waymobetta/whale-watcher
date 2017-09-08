@@ -75,7 +75,7 @@ def local():
 		with open('test.html') as sp:
 			cached = BeautifulSoup(sp, 'lxml')
 	except:
-		print 'Error- no local copy found.\nRe-run with fetch flag (-f) to grab new transaction history'
+		print 'Error: no local copy found.\nRe-run with fetch flag (-f) to grab new transaction history' # need fix
 		sys.exit()
 
 	addresses = cached.find_all('span', class_='address-tag')
