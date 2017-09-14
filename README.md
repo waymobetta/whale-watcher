@@ -4,23 +4,26 @@ whale-watcher
 
 ***python 2.7.10***
 
-
+change permissions:
+```bash
+chmod a+x whale_watcher.py
+```
 
 help:
 ```bash
-python whale-watcher.py -h
+./whale_watcher.py -h
 ```
 - runs help screen (shown)
 
 fetch:
 ```bash
-python whale-watcher.py -f
+./whale_watcher.py -f
 ```
 - prompts for ETH address then fetches most recent transaction history of account
 
 cached:
 ```bash
-python whale-watcher.py -c
+./whale_watcher.py -c
 ```
 - runs whale-watcher from local version (test.html in cwd) of previously run fetch session
 
