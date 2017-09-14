@@ -47,7 +47,7 @@ def fetch():
     url = 'https://etherscan.io/txs?a=' + addr
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
-    with open('test.html', 'w') as file:
+    with open('cached.html', 'w') as file:
             file.write(str(soup))
 
     addresses = soup.find_all('span', class_='address-tag')
