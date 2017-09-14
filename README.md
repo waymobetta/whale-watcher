@@ -25,7 +25,7 @@ cached:
 ```bash
 ./whale_watcher.py -c
 ```
-- runs whale-watcher from local version (test.html in cwd) of previously run fetch session
+- runs whale-watcher from local version (cached.html in cwd) of previously run fetch session
 
 
 todo:
