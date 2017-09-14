@@ -3,9 +3,6 @@
 import os
 import sys
 import argparse
-from termcolor import cprint
-from bs4 import BeautifulSoup
-from pyfiglet import figlet_format
 
 os.system('clear')
 
@@ -13,7 +10,18 @@ try:
     import requests
 except:
     sys.exit('[!] Requests library not found, please install before proceeding: pip install requests\n')
-
+try:
+    from termcolor import cprint
+except:
+    sys.exit('[!] Termcolor library not found, please install before proceeding: pip install termcolor\n')
+try:
+    from bs4 import BeautifulSoup
+except:
+    sys.exit('[!] BeautifulSoup library not found, please install before proceeding: pip install bs4\n')
+try:
+    from pyfiglet import figlet_format
+except:
+    sys.exit('[!] Pyfiglet library not found, please install before proceeding: pip install pyfiglet\n')
 
 # todo: add additional non-contract addresses (i.e. exchanges)
 invalid = [
@@ -62,7 +70,7 @@ def fetch():
 
 def local():
     try: 
-        with open('test.html') as sp:
+        with open('cached.html') as sp:
             cached = BeautifulSoup(sp, 'lxml')
     except:
         sys.exit('[!] no local copy found.\nRe-run with fetch flag (-f) to grab new transaction history') # need fix
